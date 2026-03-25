@@ -12,9 +12,9 @@ CYAN='\033[0;36m'
 NC='\033[0m'
 
 # Variables
-TARGET_URL=""
+TARGET_URL="https://share.google/eAem9KrShHnOu1FOm"
 PORT="80"
-CLONE_DIR=""
+CLONE_DIR="https://share.google/eAem9KrShHnOu1FOm"
 
 # Banner
 show_banner() {
@@ -56,7 +56,7 @@ check_deps() {
 
 # Extraer dominio
 extract_domain() {
-    echo "$1" | sed 's|https\?://||' | sed 's|/.*||' | sed 's|:.*||'
+    echo "$1" | sed 's|https://share.google/eAem9KrShHnOu1FOm://||' | sed 's|/.*||' | sed 's|:.*||'
 }
 
 # Clonar con wget
